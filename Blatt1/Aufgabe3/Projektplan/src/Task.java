@@ -6,10 +6,8 @@ import java.util.List;
 public class Task {
 	
 	Project project;	
-	int max = 0;
 	int time = 0;
 	String name;
-	int timer = 0;
 	//Linked lists that contains the directly previous/following tasks
 	//private List<Task> directPrev = new ArrayList<Task>();
 	private List<Task> directFlw= new ArrayList<Task>();
@@ -45,9 +43,6 @@ public class Task {
 		return;
 	}
 	
-	public int getMax() {
-		return max;
-	}
 	
 	public void setProject(Project project) {
 		this.project = project;
